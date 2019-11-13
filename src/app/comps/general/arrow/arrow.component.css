@@ -1,0 +1,13 @@
+.flex{
+    display: flex;
+    padding: 10%;
+    
+}
+.img_l{
+    
+    transform: scaleX(-1);
+}
+img{
+    height: 100%;
+    width: 26%;
+}

@@ -1,0 +1,13 @@
+<div>
+    <div class="panel">
+        <ul>
+            <h3>
+                <li *ngFor="let p of pizzaSvc.pizzas">{{p.name}}</li>
+            </h3>
+        </ul>
+    </div>
+
+    <div class="card">
+        <app-pizza-card></app-pizza-card>
+    </div>
+</div>

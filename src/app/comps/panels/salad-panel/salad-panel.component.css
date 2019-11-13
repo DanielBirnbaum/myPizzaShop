@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    padding: 5%;
+}
+.panel{
+    padding: 2%;
+}
+img{
+    
+}

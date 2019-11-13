@@ -1,0 +1,14 @@
+<div>
+        <div class="panel">
+            <ul>
+                <h3>
+                    <li *ngFor="let p of pasterySvc.pasterys">{{p.name}}</li>
+                </h3>
+            </ul>
+        </div>
+    
+        <div class="card">
+            <app-pastery-card></app-pastery-card>
+        </div>
+    </div>
+

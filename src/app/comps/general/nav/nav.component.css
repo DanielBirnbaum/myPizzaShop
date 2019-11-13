@@ -1,0 +1,16 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bold;
+    color: yellow;
+}
+li{
+    padding: 5%;
+    font-size: 35px;
+}
