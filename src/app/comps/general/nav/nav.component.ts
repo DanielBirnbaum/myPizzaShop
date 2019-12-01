@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PagingService } from 'src/app/services/paging.service';
+import { PizzaService } from 'src/app/services/pizza.service';
+import { DrinkService } from 'src/app/services/drink.service';
+import { SaladService } from 'src/app/services/salad.service';
+import { PasteryService } from 'src/app/services/pastery.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,7 +12,7 @@ import { PagingService } from 'src/app/services/paging.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(public page:PagingService) { }
+  constructor(public pizzaArr: PizzaService, public drinkArr: DrinkService, public saladArr: SaladService, public pasteryArr: PasteryService,public page:PagingService) { }
 
   ngOnInit() {
   }
@@ -19,7 +23,7 @@ export class NavComponent implements OnInit {
     this.page.currentpanel='current'+this.page.panelName;
     this.page.currentpanelIndex='current'+this.page.panelName+'Index';
     this.page.panels=this.page.panelName+'s'
-    
+    this.page.totalPrice
   }
 
 }

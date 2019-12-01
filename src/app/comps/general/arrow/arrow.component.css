@@ -1,13 +1,23 @@
-.flex{
+.flex-outer{
     display: flex;
-    padding: 10%;
-    
+    flex-direction: column;
+    background-color: #f5deb338;
+    text-align: center;
 }
 .img_l{
-    
     transform: scaleX(-1);
 }
 img{
     height: 100%;
     width: 26%;
+}
+.order {
+    width:22%;
+    text-align: center;   
+}
+
+.flex-inner {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
 }

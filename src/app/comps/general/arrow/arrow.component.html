@@ -1,8 +1,15 @@
-<div class="flex">
-        <div (click)="moveCardPage(-1,this.panel.myArr)" class="img_l">
-            <img src="https://live.staticflickr.com/7702/17458719700_0f11776f2b_b.jpg"/>
-        </div>
-        <div  (click)="moveCardPage(1,this.panel.myArr)" class="img_r">
-            <img src="https://live.staticflickr.com/7702/17458719700_0f11776f2b_b.jpg"/>
-        </div>
+<div class="flex-outer">
+    <div>
+        <img (click)='total()' src="https://marcellina.com.au/wp-content/themes/marcellina/img/order-now.gif" alt="order now" class="order">
     </div>
+<div class="flex-inner">
+    <div (click)="panel.moveCardPage(-1,this.panel.myArr)" class="img_l">
+        <img src="https://live.staticflickr.com/7702/17458719700_0f11776f2b_b.jpg" />
+    </div>
+
+    <div (click)="panel.moveCardPage(1,this.panel.myArr)" class="img_r">
+        <img src="https://live.staticflickr.com/7702/17458719700_0f11776f2b_b.jpg" />
+    </div>
+</div>
+    
+</div>
