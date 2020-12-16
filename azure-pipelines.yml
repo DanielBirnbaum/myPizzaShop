@@ -23,11 +23,6 @@ steps:
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
 
-- task: AzureFileCopy@4
-  inputs:
-    SourcePath: '$(Build.ArtifactStagingDirectory)'
-    Destination: 'AzureBlob'
-
 - script: |
     npm install -g @angular/cli
     npm install
